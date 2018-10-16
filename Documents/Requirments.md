@@ -10,7 +10,14 @@
 1.2.2 [Возможности бизнеса](#business_opportunities)  
 1.2.3 [Границы проекта](#project_boundary)  
 1.3 [Аналоги](#analogues)  
-
+2 [Требования пользователя](#user_requirements)   
+2.1 [Интерфейс пользователя](#user_interface)  
+2.2 [Характеристики пользователей](#user_specifications)  
+2.2.1 [Аудитория приложения](#application_audience)   
+2.3 [Предположения и зависимости](#assumptions_and_dependencies)  
+3 [Системные требования](#system_requirements)  
+3.1 [Функциональные требования](#functional_requirements)  
+3.1.1 [Основные функции](#main_functions)   
 
 <a name="intro"/>
 
@@ -51,3 +58,85 @@
 [Денежный менеджер, Отслеживание расходов](https://play.google.com/store/apps/details?id=money.expense.budget.wallet.manager.track.finance.tracker) - мобильное приложение, имеющее схожий набор функций и возможностей, что и Paymaster.
 
 Все приложения, которые связаны с финансами схожи в наборе их возможностей и функциях. Однако **Money Manager** будет отличаться своей простым и понятным интерфейсом, что важно для человека, которые будет использовать его.
+
+# 2 Требования пользователя
+
+<a name="user_interface"/>
+
+## 2.1 Интерфейс пользователя  
+* Cтартовый экран
+
+![Стартовый экран](Images/Mockups/Main.png) 
+
+---
+
+* Меню приложения 
+
+![Меню](Images/Mockups/Меню.png) 
+
+---
+
+* Пользовательские счета 
+
+![bills](Images/Mockups/bills.png) 
+
+---
+
+* Пользовательские транзакции 
+
+![transactions](Images/Mockups/transactions.png) 
+
+---
+
+* Просмотр и настройка категорий расходов и доходов 
+
+![categorys](Images/Mockups/categ.png) 
+
+---
+
+* Просмотр и установка периодических и разовых транзакций
+
+![period_transaction](Images/Mockups/period_transaction.png) 
+![oneTime_transaction](Images/Mockups/oneTime_transaction.png)
+
+---
+
+* Просмотр графиков расходов и доходов
+
+![chart](Images/Mockups/chart.png) 
+
+## 2.2 Характеристики пользователей
+
+<a name="user_classes"/>
+
+### 2.2.1 Аудитория приложения
+
+Целевой аудиторией приложения являются в первую очередь люди, которые хотят улучшить свое финансовое положение, изучив свои потребности и возможности. 
+<a name="assumptions_and_dependencies"/>
+
+## 2.3 Предположения и зависимости
+Данная версия приложения работает только на мобильном устройстве под операционной системой android.
+
+<a name="system_requirements"/>
+
+# 3 Системные требования
+
+<a name="functional_requirements"/>
+
+## 3.1 Функциональные требования
+
+<a name="main_functions"/>
+
+### 3.1.1 Основные функции
+
+<a name="game_choosing"/>
+
+
+
+
+
+
+
+
+
+
