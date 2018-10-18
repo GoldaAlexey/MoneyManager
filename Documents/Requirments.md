@@ -17,13 +17,17 @@
 2.3 [Предположения и зависимости](#assumptions_and_dependencies)  
 3 [Системные требования](#system_requirements)  
 3.1 [Функциональные требования](#functional_requirements)  
-3.1.1 [Основные функции](#main_functions)  
-3.1.1.1[Главный экран](#main)
-3.1.1.2[Счета](#bills_function)
-3.1.1.3[Транзакции](#transaction_function)
-3.1.1.4[Периодические транзакции](#period_transaction_function)
-3.1.1.5[Разовые транзакции](#oneTime_transaction_function)
-3.1.1.6[Графики](#chart_function)
+3.1.1 [Основные функции](#main_functions)   
+3.1.1.1 [Главный экран](#main)  
+3.1.1.2 [Счета](#bills_function)  
+3.1.1.3 [Транзакции](#transaction_function)  
+3.1.1.4 [Периодические транзакции](#period_transaction_function)  
+3.1.1.5 [Разовые транзакции](#oneTime_transaction_function)  
+3.1.1.6 [Графики](#chart_function)   
+3.2 [Нефункциональные требования](#non-functional_requirements)  
+3.2.1 [Атрибуты качества](#quality_attributes)  
+3.2.1.1 [Требования к удобству использования](#requirements_for_ease_of_use)   
+3.2.2 [Ограничения](#restrictions)  
 
 
 <a name="intro"/>
@@ -66,6 +70,7 @@
 
 Все приложения, которые связаны с финансами схожи в наборе их возможностей и функциях. Однако **Money Manager** будет отличаться своей простым и понятным интерфейсом, что важно для человека, которые будет использовать его.
 
+<a name="user_requirements"/>
 # 2 Требования пользователя
 
 <a name="user_interface"/>
@@ -221,14 +226,22 @@
 | Просмотр категорий доходов | Возможность просмотра категорий доходов |
 | Новая категория | Возможность добавить новую категорию |
 
+<a name="non-functional_requirements"/>
+
 ## 3.2 Нефункциональные требования
 
+<a name="quality_attributes"/>
+
 ### 3.2.1 Атрибуты качества
+
+<a name="requirements_for_ease_of_use"/>
 
 #### 3.2.1.1 Требования к удобству использования
 
 1. Крупные элементы управления
 2. Проверка корректного ввода данных.
+
+<a name="restrictions"/>
 
 ### 3.2.2 Ограничения
  1. Приложение работает на операционной системе android

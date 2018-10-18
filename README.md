@@ -6,5 +6,5 @@ The current version: 0.0.1
 
 ---
 
-Requirments: ([Ru](https://github.com/GoldaAlexey/MoneyManager/blob/master/Documents/Requirments.md"Требования"))
+Requirments: ([Ru](https://github.com/GoldaAlexey/MoneyManager/blob/master/Documents/Requirments.md))
 
