@@ -8,4 +8,15 @@
     tools:context=".view.TransactionPlanActivity"
     tools:showIn="@layout/activity_transaction_plan">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lv_transaction_plan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

@@ -5,21 +5,13 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_account"
-            android:icon="@drawable/ic_menu_send"
-            android:title="Accounts" />
-        <item
-            android:id="@+id/nav_transaction"
-            android:icon="@drawable/ic_menu_send"
-            android:title="Transactions" />
-        <item
             android:id="@+id/nav_transaction_plan"
             android:icon="@drawable/ic_menu_send"
             android:title="Transaction plans" />
         <item
-            android:id="@+id/nav_category"
+            android:id="@+id/nav_costs"
             android:icon="@drawable/ic_menu_send"
-            android:title="Categories" />
+            android:title="Costs/Gains" />
     </group>
 
 </menu>

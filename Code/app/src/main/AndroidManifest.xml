@@ -20,24 +20,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view.TransactionActivity"
-            android:label="@string/title_activity_transaction"
-            android:parentActivityName=".view.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".view.AccountActivity"
-            android:label="@string/title_activity_account"
-            android:parentActivityName=".view.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".view.CategoryActivity"
-            android:label="@string/title_activity_category"
-            android:parentActivityName=".view.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".view.TransactionPlanActivity"
             android:label="@string/title_activity_transaction_plan"
             android:parentActivityName=".view.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.CostActivity"
+            android:label="@string/title_activity_cost"
+            android:parentActivityName=".view.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".view.inputActivities.InputTransactionPlanActivity" />
+        <activity android:name=".view.inputActivities.InputCostActivity"></activity>
+        <activity
+            android:name=".view.inputActivities.InputTransactionActivity"
+            android:label="@string/title_activity_input_transaction"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

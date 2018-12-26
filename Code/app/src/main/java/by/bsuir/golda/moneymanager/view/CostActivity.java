@@ -17,45 +17,44 @@ import android.widget.SimpleCursorAdapter;
 import android.widget.Spinner;
 
 import by.bsuir.golda.moneymanager.R;
+import by.bsuir.golda.moneymanager.model.DBCostHelper;
 import by.bsuir.golda.moneymanager.model.DBHelper;
 import by.bsuir.golda.moneymanager.model.DBTransactionPlanHelper;
-import by.bsuir.golda.moneymanager.view.inputActivities.InputTransactionPlanActivity;
+import by.bsuir.golda.moneymanager.view.inputActivities.InputCostActivity;
 
-public class TransactionPlanActivity extends AppCompatActivity {
+public class CostActivity extends AppCompatActivity {
 
     ListView listView;
-    DBTransactionPlanHelper db;
+    DBCostHelper db;
     Cursor cursor;
     SimpleCursorAdapter simpleCursorAdapter;
-    Spinner spinner;
     private static final int CM_DELETE_ID = 1;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_transaction_plan);
+        setContentView(R.layout.activity_cost);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("Transaction plan");
+        actionBar.setTitle("Costs / Gains");
         actionBar.setDisplayShowHomeEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        db = new DBTransactionPlanHelper(this);
+        db = new DBCostHelper(this);
         db.open();
 
         cursor = db.getAllData();
         cursor.requery();
 
-        String from[] = new String[] {DBHelper.COLUMN_TRANSACTION_PLAN_CATEGORY,
-                DBHelper.COLUMN_TRANSACTION_PLAN_TITLE, DBHelper.COLUMN_TRANSACTION_PLAN_SUM};
-        int to[] = new int[] {R.id.tv_tr_plan_category_item, R.id.tv_tr_plan_title, R.id.tv_tr_plan_sum};
+        String from[] = new String[] {DBHelper.COLUMN_COST_CATEGORY,
+                DBHelper.COLUMN_COST_TITLE, DBHelper.COLUMN_COST_SUM};
+        int to[] = new int[] {R.id.tv_cost_category, R.id.tv_cost_title, R.id.tv_cost_sum};
 
-        simpleCursorAdapter = new SimpleCursorAdapter(this, R.layout.transaction_plan_item, cursor, from, to);
+        simpleCursorAdapter = new SimpleCursorAdapter(this, R.layout.cost_item, cursor, from, to);
 
-        listView = (ListView)findViewById(R.id.lv_transaction_plan);
+        listView = (ListView)findViewById(R.id.lv_cost);
         listView.setAdapter(simpleCursorAdapter);
         registerForContextMenu(listView);
 
@@ -63,13 +62,13 @@ public class TransactionPlanActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), InputTransactionPlanActivity.class);
-                startActivityForResult(intent, 1);
+               Intent intent = new Intent(getApplicationContext(), InputCostActivity.class);
+               startActivityForResult(intent, 1);
             }
         });
-
-
     }
+
+
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View view,

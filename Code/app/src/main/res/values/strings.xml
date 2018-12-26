@@ -10,4 +10,37 @@
     <string name="title_activity_account">AccountActivity</string>
     <string name="title_activity_category">CategoryActivity</string>
     <string name="title_activity_transaction_plan">TransactionPlanActivity</string>
+    <string name="title_activity_cost">CostActivity</string>
+
+    <string-array name="transactions_sa">
+        <item>Week</item>
+        <item>Month</item>
+        <item>Year</item>
+    </string-array>
+
+    <string-array name="transactions_plan_sa">
+        <item>Periodically</item>
+        <item>Once only</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+
+
+    <string-array name="cost">
+        <item>Costs</item>
+        <item>Gains</item>
+    </string-array>
+
+    <string-array name="transactions">
+        <item>My card</item>
+        <item>Father cards</item>
+        <item>Mother card</item>
+        <item>For food</item>
+        <item>SIFO cource work</item>
+        <item>Bribe for exams</item>
+        <item>For good hat</item>
+    </string-array>
+
+    <string name="title_activity_input_transaction">InputTransactionActivity</string>
 </resources>
